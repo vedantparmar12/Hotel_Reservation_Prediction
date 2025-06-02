@@ -11,9 +11,10 @@ body {
     background-color: #f4f7fa;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start; /* Changed from center to flex-start */
+    min-height: 100vh; /* Changed from height to min-height */
     margin: 0;
+    padding: 20px 0; /* Added vertical padding */
 }
 
 /* Container styling */
@@ -24,6 +25,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
+    margin: 20px; /* Added margin for better spacing */
 }
 
 /* Heading styling */
@@ -105,8 +107,13 @@ button:hover {
 
 /* Responsive design */
 @media (max-width: 768px) {
+    body {
+        padding: 10px 0;
+    }
+    
     .container {
         padding: 20px;
+        margin: 10px;
     }
 
     h2 {
